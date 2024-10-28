@@ -1,0 +1,99 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+body {
+ background-color:rgb(247, 249, 252);
+ font-family: Arial, sans-serif;
+ color: #575F7D;
+ font-size: 17px;
+ line-height: 1.2;
+}
+
+h1, h2, h3 {
+color: #5f6d9e;
+font-family: Roboto, sans-serif;
+font-size: 32px;
+line-height: 70%;
+}
+
+a {
+  color:133E87;
+  text-decoration: none;
+}
+
+a:hover {
+  background-color: black;
+}
+
+.container {
+  max-width: 700px;
+  width: 100%;
+  margin: 0 auto;
+  transition: width 0.5s ease;
+}
+
+.card {
+background: white;
+padding: 30px;
+border-radius: 4px;
+box-shadow: 0 10px 30px rgba(0,0,0,.1);
+margin: 20px;
+display: grid;
+place-items: center;
+}
+
+.list-inline {
+  list-style: none;
+  padding-left: 0px;
+}
+
+.list-inline > li {
+  display: inline-block;
+  padding: 0px 20px;
+}
+
+#btn-blue {
+  background-color: #133E87;
+  padding: 10px;
+  border-radius: 5%;
+  color: white;
+  transition: 0.3s;
+  cursor: pointer;
+}
+
+#btn-blue:hover {
+  background-color: black;
+}
+
+@media (max-width: 960px) {
+  /* For a screen < 960px, this CSS will be read */
+  .container {
+    width: 700px;
+  }
+}
+
+@media (max-width: 720px) {
+  /* For a screen < 720px, this CSS will be read */
+  .container {
+    width: 500px;
+  }
+}
+
+@media (max-width: 540px) {
+  /* For a screen < 540px, this CSS will be read */
+  .container {
+    width: 300px;
+  }
+
+  h1, h2, h3 {
+    color: #5f6d9e;
+    font-family: Roboto, sans-serif;
+    font-size: 32px;
+    line-height: 90%;
+    }
+
+    .list-inline > li {
+      display: inline-block;
+      padding: 0px 5px;
+    }
+
+}
